@@ -70,13 +70,22 @@ ul {
 #mainNav {
     display: flex;
     place-items: center;
+    
 }
 
 #sectionHeaderNav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: right;
+    justify-content: right
+    
+
+}
+#sectionHeaderNav__accion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
     
 
 }
@@ -94,7 +103,8 @@ ul {
 }
 
 .navItem,
-.navItem1 {
+.navItem1,
+.navItem0 {
     color: silver;
     font-family: 'Bebas Neue', sans-serif;
     font-weight: bold;
@@ -102,10 +112,10 @@ ul {
     transition: all 500ms;
     position: relative;
     text-align: center;
-    transition: all 500ms;
+    
 }
 
-.navItem:hover, .navItem1:hover {
+.navItem:hover, .navItem1:hover, .navItem0:hover {
     color: white;
 
 }
@@ -121,7 +131,7 @@ ul {
     transition: 500ms;
 }
 
-.navItem:hover::after {
+.navItem:hover::after{
     content: '';
     position: absolute;
     background-color: crimson;
@@ -133,7 +143,7 @@ ul {
 
 
 }
-.navItem1::after {
+.navItem1::after, .header__accion::after {
     content: '';
     position: absolute;
     background-color: crimson;
@@ -154,6 +164,16 @@ ul {
     left: 0;
     border-radius: 50%;
 }
+
+.header__accion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 10px;
+   
+}
+
 
 
 
@@ -367,6 +387,9 @@ article{
     opacity: 0;
 
 }
+span{
+    color: silver;
+}
 .icon{
     width: 100px;
     height: 100px;
@@ -388,6 +411,100 @@ article{
     color: silver
     
 }
+
+
+
+.container__accion{
+    width: 80%;
+    margin: 0 auto;
+}
+.grid__accion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    
+    
+
+}
+.grid__child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(8, 8, 8);
+    height: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    transition: all 500ms;
+    gap:10px;
+    text-shadow: 0px 0px 2px white;
+    overflow: hidden;
+    
+    
+}
+.grid__child:hover{
+    height: 200px;
+}
+.child__img{
+    width: 100%;
+    object-fit: cover;
+    height: 100px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+   
+    
+}
+.child__action1{
+    background-image: url(../images/johnwick__accion.jpg);
+    background-position: 0px 200px;
+    
+}
+.child__action2{
+    background-image: url(../images/bulletrain__accion.jpg);
+    background-position: -500px 900px;
+    
+}
+
+
+.grid__child__description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+    font-size: 1rem;
+    position: absolute;
+    top: 125px;
+    padding: 10px;
+    
+}
+
+.bi-star-fill{
+    color: goldenrod;
+    text-shadow: 0px 2px 2px black;
+}
+.bi-star-half{
+    color: goldenrod;
+    text-shadow: 0px 2px 2px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
