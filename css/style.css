@@ -195,6 +195,7 @@ ul {
     place-items: center;
     gap: 10px;
     
+    
     width: 95%;
     margin: 0 auto;
     
@@ -349,6 +350,10 @@ h3 {
 
 
 }
+.cards__link{
+    width: 100%;
+    height: 100%;
+}
 
 
 
@@ -422,6 +427,7 @@ span{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    width: 100%;
     
     
 
@@ -433,10 +439,10 @@ span{
     color: rgb(8, 8, 8);
     height: 100px;
     font-family: 'Bebas Neue', sans-serif;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
     transition: all 500ms;
     gap:10px;
@@ -470,6 +476,11 @@ span{
     background-position: -500px 900px;
     
 }
+.child__action3{
+    background-image: url(../images/operacionfortune.jpg);
+    background-position: 0px -50px
+    
+}
 
 
 .grid__child__description {
@@ -492,12 +503,78 @@ span{
     text-shadow: 0px 2px 2px black;
 }
 
+.cards__link__2{
+    color: black;
+}
+
+@media (max-width:1250px){
+    #botonesMain{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:1090px){
+    #footerOne{
+        gap: 0;
+    }
+}
 
 
+@media (max-width:768px) {
+    
+    .container__accion{
+        width: 100%;
+        
+    }
+    .grid__accion{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #footerOne {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .navItem1, .navItem, .navItem0{
+        font-size: 20px;
+    }
+    .mainNavlist{
+        padding: 10px;
+        margin: 0px;
+        gap: 10px;
+    }
+    #sectionHeaderNav__accion{
+        justify-content: center
+    }
+    #botonesMain{
+        flex-direction: column;
+        
+    }
 
 
-
-
+}
+@media (max-width:600px) {
+    .boton1, .boton2{
+        font-size: 80px;
+        line-height: 550px;
+        
+    }
+    .boton1{
+        background-size: 185%;
+    }
+    .boton2{
+        background-size: 210%;
+    }
+}
+@media (max-width:570px) {
+    .artLogo{
+        width: 350px;
+    }
+    #sectionHeaderNav{
+        justify-content: center;
+        
+    }
+   .navItem, .navItem1, .navItem0{
+    font-size: 30px;
+   }
+}
 
 
 
